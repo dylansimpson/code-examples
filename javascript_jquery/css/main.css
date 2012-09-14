@@ -1,0 +1,150 @@
+.clearfix:before,.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+
+html,body {height:1945px;
+background-image: linear-gradient(bottom, rgb(237,235,235) 36%, rgb(250,250,250) 96%);
+background-image: -o-linear-gradient(bottom, rgb(237,235,235) 36%, rgb(250,250,250) 96%);
+background-image: -moz-linear-gradient(bottom, rgb(237,235,235) 36%, rgb(250,250,250) 96%);
+background-image: -webkit-linear-gradient(bottom, rgb(237,235,235) 36%, rgb(250,250,250) 96%);
+background-image: -ms-linear-gradient(bottom, rgb(237,235,235) 36%, rgb(250,250,250) 96%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.36, rgb(237,235,235)),
+	color-stop(0.96, rgb(250,250,250))
+);}
+body {width:960px; margin:0 auto; font-family:"helvetica", "Arial", "sans-serif";}
+
+#wrapper {margin-right:30px; width:695px; float:left;}
+#header {margin:15px auto 10px auto;}
+.logo {float:left;}
+#main-content, #header {width:695px; margin:0 auto;}
+#main-content {float:right; padding-bottom:20px; width:525px;}
+
+
+/* User Votes Left/Log Out */
+#user-login {float:right; margin:45px 0 0 0;}
+#logout {margin:0 4px 6px 0; float:right;}
+.votes-left .label {padding:6px 8px; margin-bottom:5px; background:#4999B8; font-size:12px; font-weight:normal;}
+
+/* Search */
+#search {margin-bottom:25px; height:30px; width:657px; background:#e3d9c3;}
+#search-field {padding-left:5px; height:25px; width:99%; border:2px solid #ccc;}
+#search-suggest {display:none; position:absolute; width:695px;  background-color:#FFF;}
+.search-results {list-style:none;}
+
+/* Submit Idea Page */
+.outer-box {padding:3px; background:#e3d9c3; border:1px solid #cacaca; box-shadow:0 0 7px #cfcece; }
+.inner-box {padding:10px; background:#f6f6f6; border:1px solid #cacaca;}
+#submit-content .inner-box {padding:25px;}
+#submit-content {margin:100px auto 0; width:540px;}
+#submit-idea label {color:#5a8fb4; font-size:16px; text-shadow:1px 1px 0px #fff;}
+#submit-idea fieldset {margin-bottom: 15px;}
+#idea-title, #idea-desc {width:98%;}
+#idea-desc {height:270px; resize:none;}
+.cat-title-label {padding-bottom:5px; margin-bottom:15px; border-bottom:1px solid #cacaca;}
+.form-hint {padding-left:5px; font-size:12px; color:#989a9c;}
+.not-sure {font-size:12px; float:right;}
+.select-category {padding: 3px 7px;}
+.select-category, .categories {margin:0; list-style:none;}
+.select-category li, .categories li, .admin-cat  {margin:0 10px 10px 0; float:left;}
+.select-category a, .categories a, .admin-cat  {display:block; padding:2px 5px; color:#fff; background:#a7a6a5; font-weight:bold; text-shadow:1px 1px #7e7e7e; -moz-transition: background .3s; -webkit-transition: background .3s; transition: background 3s;}
+.select-category a:hover, .categories a:hover, .select-category .active, .admin-cat:hover {text-decoration:none; background:#5a8fb4;}
+#submit-action {clear:both;}
+#errorMsg {margin-top:20px; padding:4px 7px; float:left; color:#fff; text-shadow:1px 1px 0px #4d4d4d; font-size:14px; border-radius:5px;}
+.err {color:#cf4d4d;}
+#submit-Btn {width:80px; margin-top:20px; float:right; background:#4ead8a; outline:none; border:none; border-radius:5px; box-shadow:0px 0px 3px #999; color:#fff;}
+
+/* So, what's your new idea Button */
+#create-idea-btn {margin:0 0 15px 0; padding:10px; display:block; height:40px; width:75%; background:#63b697; box-shadow:0 0 5px #ccc; font-size:16px; text-align:center; border-radius:5px; border:1px solid #eee; color:#fff; text-shadow:0 0 1px #999;}
+#create-idea-btn:hover {text-decoration:none;}
+
+/* Categories */
+.categories {width:100%;}
+.categories li {margin-bottom:5px; clear:both;}
+#category-container {width:135px; float:left;}
+#category-container .title {margin-bottom:20px; font-weight:normal; color:#7f6318; text-shadow:1px 1px #fff;}
+.categories .active {background:#4999B8; text-shadow:none;}
+#adminPanel {display:none;}
+/* Home Page ideas Total/Sorting */
+#sort {height:20px; width:150px; float:right; font-size:12px;}
+.total-ideas {display:inline; padding-top:5px; float:left; font-weight:bold; font-size:14px; color:#636362; text-shadow:1px 1px 0 #fff;}
+.admin-perm .title {margin-top:10px; margin-bottom:0px;}
+
+/* Home Page ideas display */
+#ideasList {position:relative; margin-top:15px;}
+#ideasList .idea {position:relative; margin:0 0 10px 0; height:150px; padding-bottom:10px;}
+#ideasList .idea .outer-box {height:150px;}
+.idea .inner-box {padding:0; height:98.5%;}
+.idea-info {padding:10px; width:425px; float:left;}
+.vote-counter {padding-top:40px; width:66px; float:left; border-right:1px solid #ccc;}
+.votes-txt {text-align:center; color:#777370; text-shadow:1px 1px #fff;}
+.vote-count, .vote-btn {float:left; width:100%; text-align:center;}
+.vote-count {font-size:19px;}
+.vote-btn, .ideaView-vote-btn {margin-top:28px; padding:3px 10px 0 0; height:25px; background:#63b697 url(../img/thumbs-up.jpg) no-repeat; font-weight:500; outline:none; color:#fff; border:none; text-align:right; font-weight:normal}
+.vote-count {padding:5px 0; font-weight:bold; text-shadow: 1px 1px 0px #fff;}
+.idea-title {margin-bottom:10px; padding-bottom:5px; font-size:18px; font-weight:normal; border-bottom:1px solid #ccc;}
+.idea-title a {color:#639dc6; text-shadow:1px 1px 0 #fff;}
+.ideaList-txt {overflow:hidden; font-size:15px; color:#8e8164; text-shadow:1px 1px #fff;}
+#expand {text-align:right; font-size:7px;}
+#ideasList .idea-activity {position:absolute; bottom:3px; width:425px;}
+.comment-count, .status, .status-icon, .idea-submit-info img, .idea-submit-info p {float:left;}
+.comment-count {padding-right:5px; font-size:13px; color:#a5a5a5; border-right:1px solid #d1b163;}
+.comment-count:hover {text-decoration:none;}
+.status {display:inline; padding-left:5px; font-size:13px; color:#a5a5a5;}
+.status-icon {display:inline; margin:1px 0 0 5px; height:12px; width:12px; background:#f1d537; border: 1px solid #ccc; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;}
+.idea-activity .idea-submit-info {float:right;}
+.idea-submit-info img, .comment-submit-info img {padding-right:8px; width:18px; height:18px;}
+.idea-submit-info p, .comment-submit-info p {font-style:italic; color:#999;}
+
+#loading {position:absolute; left:250px; top:60px; height:30px; width:30px; background:url(../img/loader.gif) no-repeat;}
+
+/* New Ideas Ticker */
+#new-ideas-col {position:relative; padding:55px 5px 5px; width:220px; height:96.5%; float:right; background:#e3d9c3; border-left:1px solid #fff; border-right:1px solid #fff;}
+.new-ideas-title {margin-bottom:15px; padding:10px 0; text-align:center;}
+#new-idea-titlebg {position:absolute; top:0; left:0; height:50px; width:100%; background:#f6f6f6; box-shadow:0px 0px 5px #999}
+.new-idea {margin-bottom:5px; height:115px; background:#f6f6f6; box-shadow:0px 0px 3px #999; line-height:16px;}
+.new-idea-cat {padding:0px 5px; margin-bottom:5px; background:#5a8fb4; float:right; border-left:1px solid #fff; border-bottom:1px solid #fff; color:#fff; font-size:11px;}
+.new-idea-info {border-top:1px solid #d1c4a6;}
+.new-idea-info img {margin-right:10px; width:18px; height:18px;}
+.new-idea-subinfo, .new-idea-info img {float:right;}
+.new-idea-info img {margin-top:3px;}
+.new-idea-subinfo {margin:5px 10px 5px 0; font-style:italic; color:#858484; font-size:12px;}
+.new-idea-txt {width:200px; height:50px; padding:0 10px; margin-bottom:15px; overflow:hidden; clear:both; color:#858484; font-size:13px;}
+.new-idea-info ul{margin-left:0;}
+
+/* Idea View Page ------------------------------------------------*/
+#idea-content {width:535px; margin:100px auto 0 auto;}
+#idea-content .idea, #idea-content .vote-counter {float:left;}
+#idea-content .idea-title {color:#639dc6; text-shadow:1px 1px 0 #fff;}
+#idea-content .vote-counter {margin-right:3px; padding:0; width:78px;}
+#idea-content .vote-counter .inner-box {padding:0; min-height:150px;}
+#idea-content .vote-count {padding-top:57px; }
+#idea-content .idea .inner-box {position:relative; min-height:150px; padding:5px;}
+#idea-content .idea {width:450px;}
+#idea-content .idea .status {padding-left:0;}
+#idea-content .idea-info {padding-top:3px; width:410px;}
+#idea-content .idea-activity {position:absolute; bottom:1px; padding-top:5px; width:410px;}
+.ideaView-vote-btn {width:100%;}
+.ideaView-txt {padding-bottom:20px; font-size:15px; color:#8e8164; text-shadow:1px 1px #fff;}
+.ideaView-category {float:right; background:#5a8fb4; margin:-5px -5px 0 0; padding:2px 10px; color:#fff; border-left:1px solid #fff; border-bottom:1px solid #fff; color:#fff; font-size:11px;}
+/* Admin styles */
+#edit {position:absolute; left:15px;}
+.recategorize {margin:0; width:145px; height:18px; float:right;}
+.restatus {margin:-2px 0 0 0; width:100px; height:18px;}
+
+/* Comments */
+#comments-container, .comments-label {float:right; width:450px;}
+#comments-container .inner-box {padding:15px; border:1px solid #cacaca; box-shadow:0 0 7px #cfcece; }
+.comment {position:relative; margin-bottom:10px;}
+.comments-label {margin-bottom:10px; margin-top:35px; font-size:16px; font-weight:normal; color:#7f6318; text-shadow:1px 1px #fff;}
+.user-comment { width:418px; margin-bottom:10px; padding-bottom:10px; float:left; font-size:15px; color:#8e8164; text-shadow:1px 1px #fff;}
+.comment-submit-info {position:absolute; bottom:7px; right:20px; padding-top:10px; float:right; clear:both;}
+.comment-submit-info img, .comment-submit-info p {float:left;}
+.comment-submit-info p {margin-bottom: 0;}
+#comment-form {padding-top:15px;}
+#comment-field {margin-bottom:0; width:75%; float:left;}
+#submit-commentBtn {margin:0 0 0 5px; float:right;}
+#comment-form {padding-right:5px;}

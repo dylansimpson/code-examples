@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head> 
+	<meta charset="UTF-8">
+	<title>Idea View</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="clearfix">
+	<div id="new-ideas-col">
+		<div id="new-idea-titlebg">
+			<h3 class="new-ideas-title">New Ideas</h3>
+		</div><!-- new-idea-titlebg -->
+		<div id="new-ideas"></div>
+	</div><!-- End new-ideas -->
+	<div id="wrapper">
+		<div id="header" class="container">
+			<a href="/"><img class="logo "src="/img/ideabox-logo.png" alt="" width="230" height="100" ></a>
+			<div id="user-login" class="votes-left"></div>
+		</div> <!-- End header -->
+		<div id="idea-content">
+			<h3 class="comments-label"><span id="comment-count"></span> Comments</h3>
+			<div id="comments-container">
+				<div id="comment-box" class="inner-box">
+					<form id="comment-form" class="clearfix">
+						<input id="comment-field" type="text" placeholder="write a comment...">
+						<input id="submit-commentBtn" class="btn btn-small" type="submit">
+					</form><!-- End comment -->
+				</div><!-- End inner-box -->
+			</div><!-- End comments-container -->
+		</div><!-- End idea-content -->
+	</div><!-- End wrapper -->
+	<script src="/js/lib/jquery-1.7.2.min.js"></script>
+	<script src="/js/lib/jquery.cookie.js"></script>
+	<script src="/js/lib/mustache.js"></script>
+	<script src="/js/app/core.js"></script>
+	<script src="/js/app/sandbox.js"></script>
+	<script src="/js/idea.js"></script>
+	<script src="/js/home.js"></script>
+	<script src="/js/global.js"></script>
+	<script>
+	    (function(Core) {
+	      Core.startAll();
+	    }(hb.Core));
+  	</script>
+</body>
+</html>

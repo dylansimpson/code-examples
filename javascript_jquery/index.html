@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ideabox</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="clearfix">
+		<div id="new-ideas-col">
+			<div id="new-idea-titlebg">
+				<h3 class="new-ideas-title">New Ideas</h3>
+			</div><!-- new-idea-titlebg -->
+			<div id="new-ideas"></div>
+		</div><!-- End new-ideas -->
+		<div id="wrapper">
+			<div id="header" class="container">
+				<a href="/"><img class="logo" src="/img/ideabox-logo.png" alt="" width="230" height="100" ></a>
+				<div id="user-login" class="votes-left">
+					<!--<p class="label">Hi user, you have <strong>10</strong> votes left</p>-->
+				</div>
+			</div> <!-- End header -->
+				<div id="search" class="container well">
+		<form id="search-form">
+			<fieldset>
+				<input id="search-field" class="search-field" placeholder="So, what's your big idea?" autocomplete = "off" data-toggle="modal" data-target="#idea-submit"/>
+			</fieldset>
+		</form>
+		<div id="search-suggest"></div>
+			</div><!-- End search -->
+			<div id="category-container" class="container">
+				<a id="create-idea-btn" href="/submitidea/">So, what's your big idea?</a>
+				<h3 class="title">Categories</h3>
+				<ul class="categories clearfix">
+					<li id="all2"><a class="active all" href="All">All</a></li>
+					<li><a href="CLT">CLT</a></li>
+					<li><a href="Tech">Tech</a></li>
+					<li><a href="Marketing">Marketing</a></li>
+					<li><a href="Website">Website</a></li>
+					<li><a href="Finance">Finance</a></li>
+					<li><a href="Merch">Merch</a></li>
+					<li><a href="Downtown">Downtown</a></li>
+					<li><a href="Content">Content</a></li>
+					<li><a href="Facilities">Facilities</a></li>
+					<li><a href="HelpDesk">Help Desk</a></li>
+					<li><a href="HR">Human Resources</a></li>
+					<li><a href="InfoSec">Info Sec</a></li>
+					<li><a href="Insights">Insights</a></li>
+					<li><a href="Benefits">Benefits</a></li>
+					<li><a href="Mobile">Mobile</a></li>
+					<li><a href="Pipeline">Pipeline</a></li>
+					<li><a href="Couture">Couture</a></li>
+					<li><a href="SF">San Francisco</a></li>
+					<li><a href="Uncategorized">Uncategorized</a></li>
+				</ul>
+				<div id="adminPanel" class="admin-perm">
+					<h3 class="title">Admin</h>
+				</div>
+			</div><!-- End category-container -->
+			<div id="main-content">
+				<div id="ideasList-info" class="clearfix">
+					<p class="total-ideas">Ideas</p>
+					<select id="sort">
+					  <option>Oldest</option>
+					  <option>Newest</option>
+					  <option>Most Votes</option>
+					  <option>Least Votes</option>
+					</select>
+				</div>
+				<div id="ideasList" class="clearfix">
+					<span id="loading"></span>
+				</div><!-- End ideasList -->
+			</div><!-- End main-container -->
+		</div><!-- End wrapper -->
+		<div id="idea-submit" class="modal hide">
+			
+		</div><!-- End idea-submit -->
+		<script src="/js/lib/jquery-1.7.2.min.js"></script>
+		<script src="/js/lib/jquery.cookie.js"></script>
+		<script src="/js/lib/bootstrap.min.js"></script>
+		<script src="/js/lib/bootstrap-modal.js"></script>
+		<script src="/js/lib/mustache.js"></script>
+		<script src="/js/app/core.js"></script>
+		<script src="/js/app/sandbox.js"></script>
+		<script src="/js/home.js"></script>
+		<script src="/js/global.js"></script>
+		<script>
+		    (function(Core) {
+		      Core.startAll();
+		    }(hb.Core));
+	  	</script>
+</body>
+</html>

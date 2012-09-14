@@ -1,0 +1,12 @@
+<div class="new-idea clearfix">
+	{{#ideaList}}
+	<p class="new-idea-cat">{{category}}</p>
+	<a href="/ideaview/#{{ideaID}}">
+	<p class="new-idea-txt">{{ideaTitle}}</p>
+	</a>
+	<div class="new-idea-info">
+		<p class="new-idea-subinfo">by <a href="">{{userName}} </a> on {{createdDate}}</p>
+		<img src="{{gravatar}}" width="25" height="25" alt="">
+	</div><!-- End idea-info -->
+	{{/ideaList}}
+</div><!-- End idea -->

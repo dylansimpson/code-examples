@@ -1,0 +1,26 @@
+<div class="idea clearfix">
+	<div class="outer-box">
+		<div class="inner-box clearfix">
+			{{#ideaList}}
+			<div class="vote-counter clearfix">
+				<span class="vote-count">{{voteCount}}</span>
+				<p class="votes-txt">Votes</p>
+				<button class="vote-btn">Vote</button>
+			</div><!-- End vote -->
+			<div class="idea-info">
+				<h4 class="idea-title"><a href="/ideaview/#{{ideaID}}">{{title}}</a></h4>
+				<p class="ideaList-txt">{{idea}}</p>
+				<div class="idea-activity clearfix">
+						<a class="comment-count" href="/ideaview/#{{ideaID}}"> 
+						{{#commentCount}}{{commentCount}}{{/commentCount}} comments</a>
+					<p class="status">Status: {{status}}</p><div class="status-icon"></div>
+					<div class="idea-submit-info">
+						<img src= "{{gravatar}}" alt="">
+						<p>by <a href="">{{userName}}</a> on {{createdDate}}</p>
+					</div><!-- End idea-submit-info -->
+				</div><!-- End idea-activity -->
+			</div><!-- End idea-info -->
+			{{/ideaList}}
+		</div><!-- End inner-box -->
+	</div><!-- End outer-box -->
+</div><!-- End idea -->

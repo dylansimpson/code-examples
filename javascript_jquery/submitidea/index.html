@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head> 
+	<meta charset="UTF-8">
+	<title>Idea View</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+	<div id="new-ideas-col">
+		<div id="new-idea-titlebg">
+			<h3 class="new-ideas-title">New Ideas</h3>
+		</div><!-- new-idea-titlebg -->
+		<div id="new-ideas"></div>
+	</div><!-- End new-ideas -->
+	<div id="wrapper">
+	<div id="header" class="container">
+		<a href="/"><img class="logo "src="/img/ideabox-logo.png" alt="" width="230" height="100" ></a>
+		<div id="user-login" class="votes-left">
+	</div>
+	</div> <!-- End header -->
+	<div id="submit-content" class="clearfix">
+		<div class="outer-box">
+			<div class="inner-box clearfix">
+				<form id="submit-idea">
+					<fieldset>
+						<label id="title-lbl" for="idea-title">Your idea in one sentence:<span class="err"> </span></label>
+						<input id="idea-title" type="text" name="idea-title">
+					</fieldset>
+					<fieldset>
+						<label id="desc-lbl" for="idea-desc">Explain your idea:<span class="err"> </span></label>
+						<textarea id="idea-desc" name="idea-desc"></textarea>
+					</fieldset>
+					<label id="cat-lbl" class="cat-title-label">Categorize your idea:<span class="err"> </span>  <span class="form-hint">Select 1 Category</span><a class="not-sure">Not Sure?</a></label>
+					<ul class="select-category clearfix">
+						<li><a href="CLT">CLT</a></li>
+						<li><a href="Tech">Tech</a></li>
+						<li><a href="Marketing">Marketing</a></li>
+						<li><a href="Website">Website</a></li>
+						<li><a href="Finance">Finance</a></li>
+						<li><a href="Merch">Merch</a></li>
+						<li><a href="Downtown">Downtown</a></li>
+						<li><a href="Content">Content</a></li>
+						<li><a href="Facilities">Facilities</a></li>
+						<li><a href="HelpDesk">Help Desk</a></li>
+						<li><a href="HR">Human Resources</a></li>
+						<li><a href="InfoSec">Info Sec</a></li>
+						<li><a href="Insights">Insights</a></li>
+						<li><a href="Benefits">Benefits</a></li>
+						<li><a href="Mobile">Mobile</a></li>
+						<li><a href="Pipeline">Pipeline</a></li>
+						<li><a href="Couture">Couture</a></li>
+						<li><a href="SF">San Francisco</a></li>
+					</ul>
+					<div id="submit-action">
+						<span id="errorMsg"></span>
+						<button id="submit-Btn">Submit</button>
+					</div><!-- End submit-action-->
+				</form>
+			</div><!-- End inner-box -->
+		</div><!-- End outer-box -->
+	</div><!-- End submit-content -->
+</div><!-- End wrapper -->
+		<script src="/js/lib/jquery-1.7.2.min.js"></script>
+		<script src="/js/lib/jquery.cookie.js"></script>
+		<script src="/js/lib/mustache.js"></script>
+		<script src="/js/app/core.js"></script>
+		<script src="/js/app/sandbox.js"></script>
+		<script src="/js/submitIdea.js"></script>
+		<script src="/js/home.js"></script>
+		<script src="/js/global.js"></script>
+		<script>
+		    (function(Core) {
+		      Core.startAll();
+		    }(hb.Core));
+	  	</script>
+</body>
+</html>

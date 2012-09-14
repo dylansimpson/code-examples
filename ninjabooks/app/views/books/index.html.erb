@@ -1,0 +1,29 @@
+<h1>Listing books</h1>
+
+
+<%= link_to 'Add a Book to the Library', new_book_path %>
+
+<style type="text/css"> 
+
+table.rotate {
+/* Rotate */
+transform:rotate(90deg);
+-ms-transform:rotate(90deg); /* Internet Explorer */
+-moz-transform:rotate(90deg); /* Firefox */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */
+-o-transform:rotate(90deg); /* Opera */
+}
+
+table.rotate tr td {
+  height: 20px;
+  white-space: nowrap;
+}
+
+</style>
+
+<h2> Book Shelf </h2>
+<table class="rotate">
+<% @books.each do |book| %>
+  <tr><td><%= book.title %></td></tr>
+<% end %>
+</table>
